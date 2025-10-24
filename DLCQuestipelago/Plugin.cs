@@ -139,6 +139,13 @@ namespace DLCQuestipelago
                 connectionInfo.TeleportToSpawnKey = InputPatch.DEFAULT_TELEPORT_SPAWN_KEY;
                 connectionInfo.EnableEnergyLink = true;
             }
+            
+            // Cutscene Skipper
+
+            if (string.IsNullOrEmpty(connectionInfo.CutsceneSkipKey))
+            {
+                connectionInfo.CutsceneSkipKey = CutsceneSkipperPatch.DEFAULT_CUTSCENE_SKIP_KEY;
+            }
 
             APConnectionInfo = connectionInfo;
         }

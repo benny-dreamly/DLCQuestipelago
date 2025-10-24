@@ -167,6 +167,7 @@ namespace DLCQuestipelago
         private static void InitializeQualityOfLifePatches(ILogger logger, DLCQArchipelagoClient archipelago)
         {
             InputPatch.Initialize(logger, archipelago);
+            CutsceneSkipperPatch.Initialize(logger);
         }
     }
 }

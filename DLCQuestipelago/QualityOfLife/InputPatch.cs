@@ -43,6 +43,7 @@ namespace DLCQuestipelago.QualityOfLife
             try
             {
                 HandleTeleportInput(__instance, input);
+                CutsceneSkipperPatch.HandleCutsceneSkipInput(input);
                 return MethodPrefix.RUN_ORIGINAL_METHOD;
             }
             catch (Exception ex)
